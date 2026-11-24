@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Verb to be: am, is, are, was, were</title>
+<style>
+:root{--bg:#f3f5ff;--card:#fff;--tx:#1d2340;--mut:#6b7194;--pri:#5b4bff;--ok:#12a36b;--okb:#dff7ec;--bad:#e5484d;--badb:#fde6e6;--line:#dfe3f6;--soft:#eef0ff;--pre:#1e88e5;--pas:#f57c00;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12142a;--card:#1c1f3d;--tx:#eef0ff;--mut:#a0a6d4;--line:#2f3466;--soft:#262a54;--okb:#12382c;--badb:#41202a;--pri:#8a7dff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12142a;--card:#1c1f3d;--tx:#eef0ff;--mut:#a0a6d4;--line:#2f3466;--soft:#262a54;--okb:#12382c;--badb:#41202a;--pri:#8a7dff;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.hero{background:linear-gradient(135deg,#1e88e5,#5b4bff 50%,#f57c00);color:#fff;padding:36px 20px 56px;text-align:center}
+.hero h1{margin:0 0 6px;font-size:clamp(26px,5vw,42px)}.hero p{margin:0;opacity:.95}
+.top{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line);padding:8px 12px;padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.top nav{display:flex;gap:6px;overflow-x:auto;max-width:900px;margin:auto}
+.top a{white-space:nowrap;text-decoration:none;color:var(--tx);background:var(--soft);padding:5px 12px;border-radius:99px;font-size:14px;font-weight:600}
+.pg{max-width:900px;margin:6px auto 0;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--mut)}
+.pg div{flex:1;height:8px;background:var(--soft);border-radius:9px;overflow:hidden}
+#bar{display:block;height:100%;width:0;background:linear-gradient(90deg,#12a36b,#ffb703);transition:width .4s}
+main{max-width:900px;margin:-28px auto 40px;padding:0 14px}
+.card{background:var(--card);border-radius:20px;padding:22px;margin-bottom:20px;box-shadow:0 6px 24px rgba(60,50,150,.12)}
+h2{margin:0 0 12px;font-size:24px}h3{margin:0 0 4px;font-size:18px}h3 span{color:var(--pri)}
+.ins{margin:0 0 12px;color:var(--mut)}
+.act{border-top:2px dashed var(--line);padding-top:16px;margin-top:18px}
+.tw{overflow-x:auto}
+.tb{width:100%;border-collapse:separate;border-spacing:6px;min-width:480px;text-align:center}
+.tb th{border-radius:12px;color:#fff;padding:8px}.tb td{border-radius:12px;padding:10px;background:var(--soft)}
+.tb .lb{font-weight:700;width:90px}.tb .pr{border:2px solid var(--pre)}.tb .pa{border:2px solid var(--pas)}
+.pre{color:var(--pre);font-weight:700}.pas{color:var(--pas);font-weight:700}
+.pn{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin-bottom:6px}
+.pn div{border-radius:16px;padding:12px 14px;color:#fff}.pn b{font-size:19px}
+.rules{background:var(--soft);border-radius:14px;padding:10px 14px;margin:14px 0;font-size:15px}
+.mc{background:var(--soft);border-radius:14px;padding:10px 14px;margin:8px 0}
+.btn,.chip{font:inherit;cursor:pointer;border:0;border-radius:99px;padding:8px 16px;font-weight:600;background:var(--pri);color:#fff}
+.btn:hover,.chip:hover{filter:brightness(1.1)}
+.chip{background:var(--soft);color:var(--tx);padding:6px 12px;margin:3px;border:2px solid var(--line)}
+.chip.on{border-color:var(--pri);background:var(--pri);color:#fff}
+.bank{margin:6px 0}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:10px}
+.col{border:2px solid var(--line);border-radius:14px;min-height:110px;padding:8px;cursor:pointer;background:var(--soft)}
+.col b{display:block;text-align:center;margin-bottom:6px}.col .chip{background:var(--okb);border-color:var(--ok);cursor:default;display:block;text-align:left}
+.it{margin:12px 0;padding:10px 12px;border-radius:14px;background:var(--soft)}
+.q{margin-bottom:6px}.n{color:var(--pri);margin-right:6px}
+input{font:inherit;font-size:16px;color:var(--tx);background:var(--card);border:2px solid #9aa0d4;border-radius:12px;padding:8px 12px;width:100%;margin:4px 0}
+input.sm{width:130px;display:inline-block;padding:3px 10px;margin:0 4px}
+input:focus{outline:0;border-color:var(--pri)}input:disabled{background:var(--okb);border-color:var(--ok)}
+.it .btn{margin-top:4px}
+.fb{margin-top:6px;font-size:15px;font-weight:600}.fb.ok{color:var(--ok)}.fb.bad{color:var(--bad)}
+.wb{display:flex;flex-wrap:wrap;gap:6px;border:2px solid var(--pri);border-radius:14px;padding:10px;margin-bottom:10px;background:var(--soft)}.wb span{font-weight:700;color:var(--pri);padding:2px 10px}
+</style></head><body>
+<header class="hero"><h1>🌟 am · is · are · was · were</h1><p>The verb “to be”: Present vs Past · Beginner</p></header>
+<div class="top"><nav><a href="#warm">Warm-up</a><a href="#prac">Practice</a></nav>
+<div class="pg"><span>Progress</span><div><i id="bar"></i></div><b id="sc">0 / 0</b></div></div>
+<main>
+<section class="card" id="warm"><h2>🔥 Warm-up: the verb “to be”</h2>
+<div class="pn"><div style="background:var(--pre)"><b>⏰ Present (now)</b><br>I <u>am</u><br>he / she / it <u>is</u><br>we / you / they <u>are</u><br><small>now, today, at the moment</small></div>
+<div style="background:var(--pas)"><b>⏪ Past (before)</b><br>I / he / she / it <u>was</u><br>we / you / they <u>were</u><br><small>yesterday, last week, ago</small></div></div>
+<div class="tw"><table class="tb"><tr><th></th><th style="background:var(--pre)">Present</th><th style="background:var(--pas)">Past</th></tr>
+<tr><td class="lb">➕</td><td class="pr">She <b>is</b> happy.<br>They <b>are</b> happy.</td><td class="pa">She <b>was</b> happy.<br>They <b>were</b> happy.</td></tr>
+<tr><td class="lb">➖ + not</td><td class="pr">I <b>am not</b> happy.<br>She <b>isn’t</b> happy.<br>They <b>aren’t</b> happy.</td><td class="pa">She <b>wasn’t</b> happy.<br>They <b>weren’t</b> happy.</td></tr>
+<tr><td class="lb">❓ verb first</td><td class="pr"><b>Is</b> she happy?<br><b>Are</b> they happy?<br>Yes, she <b>is</b>. / No, she <b>isn’t</b>.</td><td class="pa"><b>Was</b> she happy?<br><b>Were</b> they happy?<br>Yes, she <b>was</b>. / No, she <b>wasn’t</b>.</td></tr></table></div>
+<div class="rules"><b>Remember:</b> “to be” has no <i>do / did</i>. For negatives add <b>not</b>. For questions put <b>am / is / are / was / were</b> first.</div>
+<h3>Quick check <span>(tap the answer)</span></h3><div id="wq"></div></section>
+<div id="app"></div>
+</main>
+<script>
+const $=(s,e=document)=>e.querySelector(s),el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e};
+const N=s=>s.toLowerCase().replace(/[^a-z0-9 ]/g,"").replace(/\s+/g," ").trim();
+const shuf=(a,s=0)=>a.map((x,i)=>[x,Math.sin((i+s+1)*127.1)]).sort((p,q)=>p[1]-q[1]).map(p=>p[0]);
+let done=0,total=0;
+const award=()=>{done++;upd()},upd=()=>{$("#bar").style.width=Math.round(done/Math.max(total,1)*100)+"%";$("#sc").textContent=done+" / "+total};
+function mcq(box,items){items.forEach(([q,o,k,e])=>{total++;let ok=0;const d=el("div","mc"),f=el("span","fb");d.append(q+" ");o.forEach((t,j)=>{const b=el("button","btn",t);b.style.margin="2px";b.onclick=()=>{if(ok)return;if(j==k){ok=1;award();f.className="fb ok";f.textContent=" ✅ Yes! "+e}else{f.className="fb bad";f.textContent=" ❌ "+e}};d.append(b)});d.append(f);box.append(d)})}
+mcq($("#wq"),[["Yesterday I ___ at home.",["am","was"],1,"Yesterday = past → was."],["They ___ my friends now.",["are","were"],0,"Now = present; they → are."],["___ she your sister?",["Is","She is"],0,"In a question the verb goes first."],["He ___ happy.",["wasn’t","didn’t"],0,"With “to be” use not: wasn’t (not didn’t)."]]);
+const R={};
+R.sort=(b,a)=>{const cats=Object.keys(a.d),rl={"Present":"Present: am / is / are + now, today.","Past":"Past: was / were + yesterday, last night, ago."};let sel=null;
+const bank=el("div","bank"),fb=el("div","fb"),cols=el("div","cols"),ws=[];cats.forEach(c=>a.d[c].forEach(w=>ws.push([w,c])));
+shuf(ws).forEach(([w,c])=>{total++;const x=el("button","chip",w);x.onclick=()=>{sel&&sel.classList.remove("on");sel=x;x.classList.add("on")};x._c=c;bank.append(x)});
+cats.forEach(c=>{const d=el("div","col","<b>"+(c=="Present"?"⏰ ":"⏪ ")+c+"</b>");d.onclick=()=>{if(!sel){fb.className="fb bad";fb.textContent="Tap a sentence first 👆";return}
+if(sel._c==c){d.append(el("button","chip",sel.textContent));sel.remove();sel=null;award();fb.className="fb ok";fb.textContent="✅ Correct! "+rl[c]}else{fb.className="fb bad";fb.textContent="❌ Not here. "+rl[sel._c]}};cols.append(d)});
+b.append(bank,fb,cols)};
+function txt(b,a,p){a.d.forEach(([q,ans,ex],i)=>{total++;let tr=0,ok=0;const A0=ans.split("|")[0],r=el("div","it"),f=el("div","fb"),inp=el("input"),ln=el("div","q",`<b class="n">${i+1}.</b>`);inp.type="text";inp.autocomplete="off";inp.spellcheck=false;inp.placeholder=a.k=="fill"?"type…":"Type your answer here…";
+if(a.k=="fill"){const [x,y]=q.split("__");ln.append(x,inp,y||"");inp.className="sm"}else if(a.k=="tr")ln.append(el("span","",q));
+r.append(ln);if(a.k!="fill")r.append(inp);
+if(a.k=="ord"){const cw=el("div","bank");shuf(A0.replace(/[.?]/g,"").split(" "),i+3).forEach(w=>{const c=el("button","chip",w);c.onclick=()=>{if(!ok)inp.value=(inp.value+" "+w).trim()};cw.append(c)});const rs=el("button","chip","↺");rs.onclick=()=>{if(!ok)inp.value=""};cw.append(rs);r.append(cw)}
+const chk=()=>{if(ok)return;const v=inp.value,n=N(v);if(!n)return;
+if(ans.split("|").map(N).includes(n)){ok=1;award();f.className="fb ok";f.textContent="✅ Correct! "+(a.k=="fill"?"":A0);inp.disabled=true}
+else{tr++;let m="❌ Not quite. ";m+=/\b(do|does|did|didnt|dont|doesnt)\b/i.test(N(v))?"With “to be” we don’t use do/did. ":(ex||p.tip)+" ";if(tr>1)m+="Answer: "+A0;f.className="fb bad";f.textContent=m}};
+inp.onkeydown=e=>{if(e.key=="Enter")chk()};const bt=el("button","btn","Check");bt.onclick=chk;r.append(bt,f);b.append(r)})}
+R.ord=R.fill=R.tr=txt;R.mc=(b,a)=>mcq(b,a.d);
+const I={sort:"Tap a sentence, then tap its column.",fill:"Type am, is, are, was or were.",tr:"Write the negative sentence.",ord:"Tap the words to make a question.",mc:"Tap the correct answer."};
+const act=(n,t,k,d,m,i)=>({n,t,k,d,m,i:i||I[k]});
+const P={id:"prac",t:"✏️ Practice",tip:"Present: am/is/are. Past: was/were. Check the time word!",acts:[
+act("1","Present: am, is or are?","mc",[["I ___ a student.",["is","am","are"],1,"I → am."],["She ___ my sister.",["is","are","am"],0,"she → is."],["We ___ friends.",["is","are","am"],1,"we → are."],["It ___ a small cat.",["is","are","am"],0,"it → is."],["You ___ very kind.",["are","is","am"],0,"you → are."],["They ___ in class.",["is","am","are"],2,"they → are."],["My mum ___ at work.",["are","is","am"],1,"my mum = she → is."],["Tom and I ___ ready.",["are","is","am"],0,"Tom and I = we → are."]]),
+act("2","Past: was or were?","mc",[["I ___ at home yesterday.",["was","were"],0,"I → was."],["They ___ at school.",["was","were"],1,"they → were."],["He ___ tired last night.",["was","were"],0,"he → was."],["We ___ in London last year.",["was","were"],1,"we → were."],["You ___ late.",["was","were"],1,"you → were."],["It ___ sunny yesterday.",["was","were"],0,"it → was."],["My friends ___ at the party.",["was","were"],1,"friends = they → were."],["She ___ ten last year.",["was","were"],0,"she → was."]]),
+act("3","Present or Past?","sort",{"Present":["I am happy now.","She is at home.","They are students.","We are in class today."],"Past":["I was ill yesterday.","He was late.","You were at the cinema.","We were tired last night."]}),
+act("4","Complete the sentences","fill",[["I __ ten years old now.","am|’m","I → am (now)."],["She __ at school yesterday.","was","she + yesterday → was."],["We __ happy today.","are|’re","we → are (now)."],["They __ in Paris last week.","were","they + last week → were."],["He __ a doctor. He works in a hospital.","is|’s","he → is (now)."],["You __ late last Monday.","were","you → were (past)."],["The cat __ under the table now.","is|’s","it → is (now)."],["I __ at home last night.","was","I + last night → was."],["My parents __ in the kitchen now.","are|’re","parents = they → are (now)."],["The children __ in the park yesterday.","were","children = they → were (past)."]],"am is are was were","Type the verb. Short forms (’m, ’s, ’re) are OK too."),
+act("5","Choose the correct sentence","mc",[["",["I is ten.","I am ten."],1,"I → am."],["",["We were at home.","We was at home."],0,"we → were."],["",["Was you late?","Were you late?"],1,"you → were."],["",["He wasn’t here.","He weren’t here."],0,"he → wasn’t."],["",["They are in London yesterday.","They were in London yesterday."],1,"yesterday → past: were."]]),
+act("6","Write in the negative form","tr",[["I am tired.","I’m not tired.|I am not tired.","I → am not (I’m not)."],["She is at home.","She isn’t at home.|She is not at home.|She’s not at home.","Add not: is not / isn’t."],["We are late.","We aren’t late.|We are not late.|We’re not late.","Add not: are not / aren’t."],["He was happy.","He wasn’t happy.|He was not happy.","Add not: was not / wasn’t."],["They were in Rome.","They weren’t in Rome.|They were not in Rome.","Add not: were not / weren’t."],["It was cold yesterday.","It wasn’t cold yesterday.|It was not cold yesterday.","Add not: was not / wasn’t."]]),
+act("7","Write in order","ord",[["","Are you ready?"],["","Is she your teacher?"],["","Was he at school yesterday?"],["","Were they happy?"],["","Am I late?"],["","Were we in the park last week?"]]),
+act("8","Short answers","fill",[["Is she a doctor? Yes, she __.","is","Yes, she is. (no short form at the end)"],["Were they at home? No, they __.","weren’t|were not","No + not: weren’t."],["Was he late? Yes, he __.","was","Yes, he was."],["Was it cold? No, it __.","wasn’t|was not","No + not: wasn’t."],["Are they teachers? Yes, they __.","are","Yes, they are."],["Were you at school? No, I __.","wasn’t|was not","I → was, so: wasn’t."]],"is are was were wasn’t weren’t")]};
+const s=el("section","card");s.id=P.id;s.append(el("h2","",P.t));
+P.acts.forEach(a=>{const b=el("div","act");b.append(el("h3","","Activity "+a.n+". <span>"+a.t+"</span>"),el("p","ins",a.i));if(a.k=="fill"&&a.m)b.append(el("div","wb",a.m.split(" ").map(w=>"<span>"+w+"</span>").join("")));R[a.k](b,a,P);s.append(b)});
+$("#app").append(s);upd();
+</script></body></html>
